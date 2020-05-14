@@ -11,9 +11,39 @@
 body{
     margin: 0px;
     padding: 0px;
-    background: url(./img/new.jpg);
+    /* background: url(./img/new.jpg); */
     background-color: white;
 }
+body>div{
+    box-shadow: 1px 1px 10px rgba(53, 19, 247, 0.801);
+}
+body>div>div{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.body .ratings{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: auto;
+}
+.body .ratings .rating2{
+background-image: url(./img/golden.jpg);
+}
+.body .ratings .rating2 ul img{
+    width: 100px;
+    height: 100px;
+}
+.body .ratings .rating2 div{
+    background-color: rgba(49, 45, 45, 0.384);
+}
+.body .ratings .rating1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+
 *{
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
@@ -280,6 +310,8 @@ color: rgb(124, 208, 236);
 }
 .extra .social ul li img{
     width: 100px;
+    opacity: 0;
+    transition: opacity 3s;
 }
 .footer{
     grid-column: 1/7;
@@ -324,6 +356,26 @@ color: rgb(124, 208, 236);
     margin-top: 20%;
     color: blanchedalmond;
 
+}
+.scroll{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    background-color: brown;
+    position: fixed;
+    opacity: 0.8;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 3s;
+}
+.scroll span{
+    color: white;
+    font-size: 30px;
+    margin-left: 35%;
+    
 }
 @media screen and (min-width: 698px) {
 
